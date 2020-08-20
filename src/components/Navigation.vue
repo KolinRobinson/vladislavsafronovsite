@@ -6,11 +6,11 @@
           <img src="../assets/img/logo.png" alt="">
         </div>
         <nav>
-          <router-link to="/">Home</router-link>
-          <router-link to="/portrait">Portrait</router-link>
-          <router-link to="/nature">Nature</router-link>
-          <router-link to="/architecture">Architecture</router-link>
-          <router-link to="/about">About</router-link>
+          <router-link to="/">Главная</router-link>
+          <router-link to="/portrait">Портрет</router-link>
+          <router-link to="/nature">Природа</router-link>
+          <router-link to="/architecture">Архитектура</router-link>
+          <router-link to="/about">Обо мне</router-link>
         </nav>
       </div>
     </div>
@@ -57,6 +57,14 @@ li {
 a.router-link-exact-active {
   transform: rotate(15deg) translateY(10px) !important;
   transition: all .5s ease-in;
+}
+
+a.router-link-exact-active:nth-child(2n) {
+  transform: rotate(-15deg) translateY(-10px) !important;
+  transition: all .5s ease-in;
+}
+nav{
+  margin-top: 10px;
 }
 
 .header__wrapper{

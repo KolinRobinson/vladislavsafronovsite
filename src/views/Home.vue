@@ -1,17 +1,54 @@
 <template>
   <div class="home">
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  	<div class="container">
+  		<h1 class="home-title">Я Влад — мобильный фотограф.<br><span>Предлагаю вам ознакомиться с моими работами.</span></h1>
+  		<div class="category__wrapper">
+            <singleCategory
+            v-for="(category, index) in categories"
+            :key="index"
+            :category="category"/>
+        </div>
+  	</div>
+    
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import singleCategory from "@/components/single-category";
 
 export default {
   name: "Home",
   components: {
-    HelloWorld
-  }
+    singleCategory
+  },
+  data() {
+			return {
+                categories: [
+                    {name: 'Портрет', src: 'portrait/01.jpg', link: '/portrait'},
+                    {name: 'Природа', src: 'nature/01.jpg', link: '/nature'},
+                    {name: 'Архитектура', src: 'architecture/01.jpg', link: '/architecture'},
+                ],
+			}
+		}
 };
 </script>
+
+<style>
+	.category__wrapper{
+		display: flex;
+		-ms-align-items: center;
+		align-items: center;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+
+	.home-title{
+		font-size: 2.5rem;
+		margin-bottom: 2rem;
+		line-height: 0.54;
+	}
+	.home-title>span{
+		font-size: 1.5rem;
+	}
+</style>
