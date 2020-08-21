@@ -43,6 +43,11 @@ li {
 .navigation {
   padding: 30px;
 }
+@media screen and (max-width: 560px) {
+    .navigation {
+      padding: 10px 0;
+    }
+}
 
 .navigation a {
   display: inline-block;
@@ -51,8 +56,8 @@ li {
   padding: 5px 10px;
   transform: rotate(0deg) translateY(0px);
   transition: all .5s ease-in;
-
 }
+
 
 a.router-link-exact-active {
   transform: rotate(15deg) translateY(10px) !important;
@@ -65,6 +70,11 @@ a.router-link-exact-active:nth-child(2n) {
 }
 nav{
   margin-top: 10px;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .header__wrapper{
@@ -79,4 +89,14 @@ nav{
   width: 100%;
   margin-bottom: 15px;
 }
+
+@media screen and (max-width: 560px) {
+    .navigation {
+      padding: 10px 0;
+    }
+    .navigation a {
+      padding: 5px 7px;
+    }
+}
+
 </style>
