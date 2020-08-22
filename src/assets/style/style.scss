@@ -87,6 +87,10 @@ a {
     transition      : all .5s ease-in-out;
 }
 
+i{
+    font-style: italic;
+}
+
 .container {
     max-width: 1360px;
     padding: 0 calc(15px + 2.63vw);

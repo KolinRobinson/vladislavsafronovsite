@@ -3,17 +3,20 @@
     <navigation/>
     <transition name="slide-fade">
       <router-view />
-    </transition>
+    </transition>  
+    <footers />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import navigation from "@/components/Navigation.vue";
+import footers from "@/components/Footer.vue";
 
 export default {
   components: {
-    navigation
+    navigation,
+    footers
   }
 };
 </script>

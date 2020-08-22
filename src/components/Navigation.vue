@@ -58,6 +58,11 @@ li {
   transition: all .5s ease-in;
 }
 
+.navigation a:hover {
+  font-size: 1.2rem;
+  transition: all .5s ease-in;
+}
+
 
 a.router-link-exact-active {
   transform: rotate(15deg) translateY(10px) !important;
@@ -95,7 +100,7 @@ nav{
       padding: 10px 0;
     }
     .navigation a {
-      padding: 5px 7px;
+      padding: 8px 7px;
     }
 }
 
