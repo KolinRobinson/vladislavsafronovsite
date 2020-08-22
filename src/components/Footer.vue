@@ -61,11 +61,12 @@ small{
 .footer_buy > a{
   padding: 10px;
   font-weight: bold;
+  opacity: .7;
   text-decoration: underline;
   transition: all .5s ease-in;
 }
 .footer_buy a:hover {
-  font-size: 1.2rem;
+  opacity: 1;
   transition: all .5s ease-in;
 }
 
@@ -74,18 +75,18 @@ small{
   font-weight: bold;
   padding: 5px 10px;
   color: #FFFFFF;
-  transform: scale(1) translate(0, 0);
+  opacity: .7;
   transition: all .5s ease-in;
 }
 
 .navigation a:hover {
-  font-size: 1.2rem;
+  opacity: 1;
   transition: all .5s ease-in;
 }
 
 
 a.router-link-exact-active {
-  transform: scale(1.3) translate(5%, -5%);
+  opacity: 1;
   transition: all .5s ease-in;
 }
 

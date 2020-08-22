@@ -53,13 +53,14 @@ li {
   display: inline-block;
   font-weight: bold;
   color: black;
+  opacity: .8;
   padding: 5px 10px;
   transform: rotate(0deg) translateY(0px);
   transition: all .5s ease-in;
 }
 
 .navigation a:hover {
-  font-size: 1.2rem;
+  opacity: 1;
   transition: all .5s ease-in;
 }
 
@@ -67,6 +68,7 @@ li {
 a.router-link-exact-active {
   transform: rotate(15deg) translateY(10px) !important;
   transition: all .5s ease-in;
+  opacity: 1;
 }
 
 a.router-link-exact-active:nth-child(2n) {

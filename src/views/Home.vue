@@ -55,7 +55,7 @@ export default {
 	@media screen and (max-width: 560px) {
     .home-title{
     	margin-top: 1rem;
-		line-height: 0.68;
+		line-height: 0.75;
 	}
 }
 </style>

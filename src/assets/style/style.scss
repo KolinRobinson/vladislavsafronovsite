@@ -96,3 +96,10 @@ i{
     padding: 0 calc(15px + 2.63vw);
     margin: 0 auto;
 }
+
+@media screen and (max-width: 560px) {
+    nav{
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    }
