@@ -52,6 +52,13 @@ export default {
 		font-size: 1.5rem;
 	}
 
+	@media screen and (max-width: 1000px) {
+    .home-title{
+    	margin-top: 1rem;
+		line-height: 0.74;
+	}
+}
+
 	@media screen and (max-width: 560px) {
     .home-title{
     	margin-top: 1rem;

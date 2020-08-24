@@ -20,7 +20,10 @@ export default {
   data() {
 			return {
 				imageSrc: [
-					'architecture/01.jpg'
+					'architecture/01.jpg',
+					'architecture/02.jpg',
+					'architecture/03.jpg',
+					'architecture/04.jpg'
 				]
             }
         }

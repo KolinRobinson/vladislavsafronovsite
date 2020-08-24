@@ -57,6 +57,7 @@ export default {
 	.about__img{
 		display: flex;
 		flex: 0 1 40vw;
+		object-fit: contain;
 	}
 	.about__info{
 		display: flex;
